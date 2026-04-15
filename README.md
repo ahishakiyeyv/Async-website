@@ -1,6 +1,8 @@
 # Async Eng
 
-This template should help get you started developing with Vue 3 in Vite.
+Bridging Intelligence, Innovation, and Infrastructure.
+
+Welcome to the official website of Async Eng. We are a dynamic team of 20-50 specialized engineers, designers, and researchers dedicated to building the next generation of digital and physical solutions. From high-performance AI models to sustainable energy systems, we operate at the intersection of technology and impact.
 
 ## Recommended IDE Setup
 
