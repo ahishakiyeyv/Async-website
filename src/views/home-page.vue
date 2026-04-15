@@ -2,11 +2,13 @@
 import HeroSection from '../components/hero_section.vue'
 import AboutSection from '../components/about_section.vue'
 import ServiceSection from '../components/service_section.vue'
+import WorkSection from '../components/work_section.vue'
 </script>
 <template>
   <HeroSection />
   <AboutSection />
   <ServiceSection />
+  <WorkSection />
 </template>
 <style>
 :root {
