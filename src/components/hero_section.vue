@@ -49,6 +49,11 @@
 }
 .hero-section h1 span {
   color: var(--color-primary);
+  background: linear-gradient(to bottom, #63cad6 0%, #3a8ca3 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 15px rgba(99, 202, 214, 0.4));
+  letter-spacing: 0.2rem;
 }
 .hero-section p {
   font-size: 1.2rem;
