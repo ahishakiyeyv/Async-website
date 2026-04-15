@@ -1,11 +1,20 @@
-<script setup></script>
+<script setup>
+import MenuComponent from './components/menu-component.vue'
+import HomePage from './views/home-page.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <MenuComponent />
+  <main>
+    <HomePage />
+  </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+* {
+  font-family: 'Inter', sans-serif;
+}
+main {
+  background: var(--color-background);
+}
+</style>
