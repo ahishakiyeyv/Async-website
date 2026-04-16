@@ -205,8 +205,7 @@
         </div>
       </article>
 
-
-       <article class="work-card">
+      <article class="work-card">
         <div class="work-card__badge">Energy / IoT</div>
         <div class="work-card__media work-card__media--energy">
           <div class="work-card__overlay">
@@ -309,7 +308,7 @@
   margin: 1.2rem auto 0;
   font-size: 1rem;
   line-height: 1.85;
-  color: rgba(248, 249, 251, 0.72);
+  color: var(--color-muted);
 }
 
 .work-section__grid {
