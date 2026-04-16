@@ -271,9 +271,17 @@
   .about-section__feature-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .about-section__title {
+    font-size: 2.8rem;
+  }
+
+  .about-section__copy {
+    font-size: 1rem;
+  }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 760px) {
   .about-section {
     padding: 3.5rem 1.25rem 2rem;
   }
@@ -284,6 +292,7 @@
 
   .about-section__title {
     font-size: 2.3rem;
+    letter-spacing: 0.2rem;
   }
 
   .about-section__copy {
@@ -295,9 +304,19 @@
     grid-template-columns: 1fr;
   }
 
+  .about-section__feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
   .about-card {
     min-height: auto;
     padding: 1.75rem;
+  }
+
+  .about-feature-card {
+    padding: 1.5rem;
   }
 }
 
@@ -313,6 +332,17 @@
 
   .about-section__title {
     font-size: 1.95rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .about-section__copy {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .about-section__feature-grid {
+    grid-template-columns: 1fr;
+    margin-top: 2.5rem;
   }
 
   .about-card {
@@ -321,6 +351,24 @@
 
   .about-card__value {
     font-size: 2.1rem;
+  }
+
+  .about-feature-card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .about-feature-card__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .about-feature-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .about-feature-card p {
+    font-size: 0.9rem;
   }
 }
 </style>

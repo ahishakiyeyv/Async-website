@@ -4,6 +4,7 @@ import AboutSection from '../components/about_section.vue'
 import ServiceSection from '../components/service_section.vue'
 import WorkSection from '../components/work_section.vue'
 import ContactSection from '../components/contact_section.vue'
+import FooterSection from '../components/footer_section.vue'
 </script>
 <template>
   <HeroSection />
@@ -11,6 +12,7 @@ import ContactSection from '../components/contact_section.vue'
   <ServiceSection />
   <WorkSection />
   <ContactSection />
+  <FooterSection />
 </template>
 <style>
 :root {

@@ -105,7 +105,7 @@
 
 .contact-section__title {
   margin: 0;
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 2rem + 1.5vw, 4rem);
   letter-spacing: 0.3rem;
   line-height: 1.02;
   font-weight: 700;
@@ -132,12 +132,13 @@
   margin: 3rem auto 0;
   padding: 2rem 2rem;
   width: 100%;
-  max-width: 920px;
+  max-width: 720px;
   border-radius: 2rem;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(18px);
+  box-sizing: border-box;
 }
 
 .contact-form {
@@ -265,6 +266,7 @@
 
   .contact-card {
     padding: 1.8rem;
+    max-width: 600px;
   }
 
   .contact-form__row--split {
@@ -274,20 +276,27 @@
 
 @media (max-width: 760px) {
   .contact-section {
-    padding: 3.5rem 1.2rem 3rem;
+    padding: 3.5rem 1rem 2.5rem;
   }
 
   .contact-section__title {
-    font-size: 2.8rem;
+    font-size: clamp(1.8rem, 1.5rem + 1vw, 2.8rem);
+    letter-spacing: 0.2rem;
   }
 
   .contact-section__subtitle {
-    font-size: 0.98rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
   }
 
   .contact-card {
-    margin: 2.5rem 0 0;
-    padding: 1.6rem;
+    margin: 2rem 0 0;
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .contact-form__row--split {
+    grid-template-columns: 1fr;
   }
 
   .contact-form__button {
@@ -295,36 +304,119 @@
   }
 
   .contact-card__footer {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 1.2rem;
   }
 }
 
 @media (max-width: 480px) {
   .contact-section {
-    padding: 2.8rem 1rem 2.5rem;
+    padding: 2.5rem 0.75rem 2rem;
+  }
+
+  .contact-section__content {
+    max-width: 100%;
+    padding: 0 0.5rem;
   }
 
   .contact-section__eyebrow {
-    padding: 0.65rem 1.1rem;
-    font-size: 0.72rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.68rem;
+    margin-bottom: 0.8rem;
   }
 
   .contact-section__title {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.15rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .contact-section__subtitle {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin: 0.8rem auto 0;
   }
 
   .contact-card {
-    padding: 1.25rem;
-    border-radius: 1.5rem;
+    margin: 1.5rem 0 0;
+    padding: 1rem;
+    max-width: 100%;
+    border-radius: 1.2rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  }
+
+  .contact-form {
+    gap: 0.6rem;
+  }
+
+  .contact-form__row {
+    gap: 1rem;
+  }
+
+  .contact-form__row--split {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-field {
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .contact-field span {
+    font-weight: 600;
+    font-size: 0.8rem;
   }
 
   .contact-field input,
   .contact-field textarea {
-    padding: 0.95rem 1rem;
+    padding: 0.75rem 0.9rem;
+    font-size: 0.9rem;
+    border-radius: 0.8rem;
+  }
+
+  .contact-field textarea {
+    min-height: 120px;
+    resize: none;
+  }
+
+  .contact-form__action {
+    margin-top: 0.5rem;
+  }
+
+  .contact-form__button {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    gap: 0.5rem;
+  }
+
+  .contact-form__button svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .contact-card__footer {
+    margin-top: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
   }
 
   .contact-card__item {
-    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .contact-card__icon {
+    font-size: 1rem;
+    min-width: 20px;
+  }
+
+  .contact-card__footer a,
+  .contact-card__footer p {
+    font-size: 0.65rem;
+    letter-spacing: 0.1rem;
   }
 }
 </style>

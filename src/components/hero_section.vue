@@ -100,4 +100,82 @@
   background-color: var(--color-secondary);
   border-color: var(--color-secondary);
 }
+
+@media (max-width: 1100px) {
+  .hero-section {
+    padding: 6rem 10rem;
+  }
+
+  .hero-section h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.1rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-section {
+    padding: 5rem 3rem;
+  }
+
+  .hero-span {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+    width: 90%;
+    line-height: 1.6rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .hero-span {
+    font-size: 0.8rem;
+    padding: 0.35rem 0.7rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-section p {
+    font-size: 0.95rem;
+    width: 100%;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+  }
+}
 </style>
