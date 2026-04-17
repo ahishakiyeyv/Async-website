@@ -2,9 +2,9 @@
   <header class="menu-bar">
     <div class="menu-bar__brand">Async Eng.</div>
     <nav class="menu-bar__nav">
+      <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#portfolio">Portfolio</a>
-      <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
     <a class="menu-bar__cta" href="#contact">Get in Touch</a>
